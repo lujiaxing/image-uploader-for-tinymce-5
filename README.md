@@ -1,6 +1,6 @@
 # Image uploader for TinyMCE V5
 
-A simple image uploader for TinyMCE V5. Supports mutiple file selecting. 
+A simple image uploader for TinyMCE V5. Supports multiple file selection.
 
 Requirements: TinyMCE V5, JQuery.
 
