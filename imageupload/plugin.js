@@ -134,12 +134,12 @@
 			
 		};
 
-		this.defaultAllowImageUploadTypes = "image/jpg,image/jpeg,image/png,image/gif";
+		this.defaultAllowImageUploadTypes = "image/jpeg,image/png,image/gif";
 		this.defaultUploadTimeout = 120000; //Milliseconds
 		this.errorMessages = [
 			"Upload succeeded",
 			"Nothing to upload",
-			"Unsupport image format",
+			"Unsupported image format",
 			"File size limit exceeded",
 			"Not enough disk space",
 			"Permission denied"
