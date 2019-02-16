@@ -44,7 +44,7 @@ Configurations:
 	imageUploadErrorMessages: ["message", "will", "be", "read", "by", "index"],
 	allowImageUploadTypes: "image/jpeg,image/png,image/gif for default.",
 	maxImageFileSize: 0, // 0 = no limited. 0 for default.
-	imageUploadTimeout: 120000 //Upload timeout. 2 minutes for default.
+	imageUploadTimeout: 120000 //Upload timeout in milliseconds. 2 minutes for default.
 }
 ```
 
