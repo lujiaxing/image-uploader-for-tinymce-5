@@ -41,6 +41,7 @@ Response format:
 Configurations:
 ```javascript
 {
+	image_url_prefix: "url path attached to the front of returned url path",
 	imageUploadErrorMessages: ["message", "will", "be", "read", "by", "index"],
 	allowImageUploadTypes: "image/jpeg,image/png,image/gif for default.",
 	maxImageFileSize: 0, // 0 = no limited. 0 for default.

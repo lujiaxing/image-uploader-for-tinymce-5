@@ -67,7 +67,8 @@
                             editor.focus();
 
                             for(var j = 0; j < resp.data.length; j++){
-                                editor.selection.setContent(dom.createHTML('img', {src: resp.data[j]}));
+                                editor.selection.setContent(dom.createHTML('img', {src: 
+                                    (editor.settings.image_url_prefix || '') + resp.data[j]}));
                             }
                             
                         }
