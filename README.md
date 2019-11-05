@@ -73,6 +73,7 @@ Configurations:
 **Todo:**
 - [ ] Internationalization
 - [ ] Preview
+---
 
 
 Licensed under MIT Licence.
