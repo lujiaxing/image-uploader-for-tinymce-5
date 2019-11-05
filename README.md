@@ -4,6 +4,8 @@ A simple image uploader for TinyMCE V5. Supports multiple file selection, image 
 
 Requirements: TinyMCE V5.
 
+Supported browser: Internet Explorer 11, Edge, Chrome, FireFox, Safari.
+
 Useage: just copy "imageupload" folder in to "plugins" folder.
 
 ```javascript
