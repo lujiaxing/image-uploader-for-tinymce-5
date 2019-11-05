@@ -69,9 +69,11 @@ Configurations:
 }
 ```
 
+```
 Todo:
-* Internationalization
-* Preview
+[ ] Internationalization
+[ ] Preview
+```
 
 
 Licensed under MIT Licence.
