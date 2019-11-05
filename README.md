@@ -17,7 +17,7 @@ tinymce.init({
 });
 ```
 
-Server response format (just for default uploader):
+Server response format (just for default ajax uploader):
 ```javascript
 {
 	message: "Server response messages",
