@@ -13,13 +13,13 @@
         this.global = tinymce.util.Tools.resolve('tinymce.PluginManager');
 
         //image file only
-        this.acceptableFileTypes = (typeof(tinymce.settings.imgUpload_AllowUploadTypes) == 'undefined' ? "image/jpg,image/jpeg,image/png,image/gif" : tinymce.settings.imgUpload_AllowUploadTypes);
+        this.acceptableFileTypes = tinymce.settings.imgUpload_AllowUploadTypes || "image/jpg,image/jpeg,image/png,image/gif";
 
         //2MB for default.
-        this.singleFileMaxSize = (typeof(tinymce.settings.imgUpload_SingleFileMaxSize) == 'undefined' ? 0 : tinymce.settings.imgUpload_SingleFileMaxSize);
+        this.singleFileMaxSize = tinymce.settings.imgUpload_SingleFileMaxSize || 0;
 
         //40MB for default.
-        this.maxUploadSize = (typeof(tinymce.settings.imgUpload_MaxUploadSize) == 'undefined' ? 0 : tinymce.settings.imgUpload_MaxUploadSize) ;
+        this.maxUploadSize = tinymce.settings.imgUpload_MaxUploadSize || 0;
 
         //register command
         this.commandRegister = function(editor){
