@@ -69,16 +69,17 @@ Configurations:
 }
 ```
 
-
-**Todo:**
-- [ ] Internationalization
-- [ ] Preview
----
-
 preview:
 ![1](https://raw.githubusercontent.com/lujiaxing/image-uploader-for-tinymce-5/master/preview-images/1.jpg)
 ![2](https://raw.githubusercontent.com/lujiaxing/image-uploader-for-tinymce-5/master/preview-images/2.jpg)
 ![3](https://raw.githubusercontent.com/lujiaxing/image-uploader-for-tinymce-5/master/preview-images/3.jpg)
+
+
+**Todo:**
+- [ ] Internationalization
+- [ ] Preview
+
+---
 
 Licensed under MIT Licence.
 
