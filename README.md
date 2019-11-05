@@ -4,9 +4,9 @@ A simple image uploader for TinyMCE V5. Supports multiple file selection, image 
 
 Requirements: TinyMCE V5.
 
-Supported browser: Internet Explorer 11, Edge, Chrome, FireFox, Safari.
+Supported browsers: Internet Explorer 11, Edge, Chrome, FireFox, Safari.
 
-Useage: just copy "imageupload" folder in to "plugins" folder.
+Useage: just copy "imageupload" folder into "/tinymce/plugins" folder.
 
 ```javascript
 tinymce.init({
@@ -17,10 +17,9 @@ tinymce.init({
 });
 ```
 
-Response format:
+Server response format (just for default uploader):
 ```javascript
 {
-	
 	message: "Server response messages",
 	success: true/false,
 	data: '/path/to/an/uploaded/image.jpg'
