@@ -1,4 +1,4 @@
-# Image uploader for TinyMCE V5
+# Image uploader for TinyMCE V5 v2.0
 
 A simple image uploader for TinyMCE V5. Supports multiple file selection, image reorder.
 
@@ -31,9 +31,8 @@ Configurations:
 	imgUpload_UploadTargetUrl: "url to recive upload request",
 	imgUpload_AllowUploadTypes: "image/jpeg,image/png,image/gif for default.",
 	imgUpload_ImageUrlPrefix: "url path attached to the front of returned url path",
-	// specify a uploader for ajax upload. If not setted, the built-in ajax uploader will
-	// be used for uploading images
-	// here is an example:
+	// Specify a uploader for ajax upload. If not setted, the built-in ajax uploader will
+	// be used. Here is an example:
 	imgUpload_Uploader: { 
 		upload : function (param) {
 			param.onUploaded(
