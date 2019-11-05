@@ -151,5 +151,4 @@
 		_this.Buttons.register.call(_this, editor);
 	});
 
-
 });
