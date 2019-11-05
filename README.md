@@ -70,7 +70,7 @@ Configurations:
 ```
 
 
-*Todo:*
+**Todo:**
 - [ ] Internationalization
 - [ ] Preview
 
