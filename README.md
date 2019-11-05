@@ -1,8 +1,8 @@
 # Image uploader for TinyMCE V5
 
-A simple image uploader for TinyMCE V5. Supports multiple file selection.
+A simple image uploader for TinyMCE V5. Supports multiple file selection, image reorder.
 
-Requirements: TinyMCE V5, JQuery.
+Requirements: TinyMCE V5.
 
 Useage: just copy "imageupload" folder in to "plugins" folder.
 
@@ -19,33 +19,52 @@ Response format:
 ```javascript
 {
 	
-	message: "Server messages. If do not have this property, then use messages from settings.imageUploadErrorMessages",
-	
-	/*
-		0: "Upload succeeded",
-		1: "Nothing to upload",
-		2: "Unsupported image format",
-		3: "File size limit exceeded",
-		4: "Not enough disk space",
-		5: "Permission denied"
-	*/
-	resultCode: 0,
-	
-	data: [
-		'/path/to/an/uploaded/image.jpg',
-		'/path/to/another/uploaded/image.jpg' 
-	]
+	message: "Server response messages",
+	success: true/false,
+	data: '/path/to/an/uploaded/image.jpg'
 }
 ```
 
 Configurations:
 ```javascript
 {
-	image_url_prefix: "url path attached to the front of returned url path",
-	imageUploadErrorMessages: ["message", "will", "be", "read", "by", "index"],
-	allowImageUploadTypes: "image/jpeg,image/png,image/gif for default.",
-	maxImageFileSize: 0, // 0 = no limited. 0 for default.
-	imageUploadTimeout: 120000 //Upload timeout in milliseconds. 2 minutes for default.
+	imgUpload_UploadTargetUrl: "url to recive upload request",
+	imgUpload_AllowUploadTypes: "image/jpeg,image/png,image/gif for default.",
+	imgUpload_ImageUrlPrefix: "url path attached to the front of returned url path",
+	// specify a uploader for ajax upload. If not setted, the built-in ajax uploader will
+	// be used for uploading images
+	// here is an example:
+	imgUpload_Uploader: { 
+		upload : function (param) {
+			param.onUploaded(
+
+				//uploaded files.
+				param.data.map(function(v, i, a){
+					return {
+						name: v.name, //file name
+						url: URL.createObjectURL(v) //url from server
+					};
+				}),
+
+				//failures
+				[
+					{
+						name: "file-name",
+						url: null,
+						reason: "network failure",
+					}
+				]
+			);
+		}
+	},
+
+	//0 or unset means unlimited.
+	imgUpload_SingleFileMaxSize: 2097152,
+
+	//0 or unset means unlimited.
+	imgUpload_MaxUploadSize: 41943040
+
+	
 }
 ```
 
