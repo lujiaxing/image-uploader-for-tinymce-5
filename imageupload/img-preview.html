@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script language="javascript" type="text/javascript" src="img-preview.js"></script>
+        <style type="text/css">
+            * {margin:0; padding:0;list-style: none}
+
+            #ulImg {width:100%; position:relative; margin:10px auto;}
+            #ulImg li {width:100px; height:120px; float:left; list-style:none; margin:10px; position: relative;}
+            #ulImg li img{width: 100px; height: 90px;}
+            #ulImg li:hover{ border-color: #9a9fa4; box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.85);}
+            #ulImg .active{ border:1px dashed red;}
+            .title{
+                font-family:'Microsoft YaHei UI', 'Microsoft YaHei', 'SimHei', Arial, Helvetica, sans-serif;
+                font-size: 11pt;
+                color: #666;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #BBB;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">
+            您可以拖拽某一张图片排序, 或者双击删除这张图片.
+        </div>
+        <ul id="ulImg">
+        </ul>
+    </body>
+</html>
