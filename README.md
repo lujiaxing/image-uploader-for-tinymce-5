@@ -10,7 +10,7 @@ Useage: just copy "imageupload" folder into "/tinymce/plugins" folder.
 
 ```javascript
 tinymce.init({
-    upload_image_url: "/URL/TO/RECEIVE/UPLOAD/REQUEST",
+    imgUpload_UploadTargetUrl: "/URL/TO/RECEIVE/UPLOAD/REQUEST",
     external_plugins: {
         'imageupload': './plugins/imageupload/plugin.js'
     }
